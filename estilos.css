@@ -1,0 +1,446 @@
+:root {
+    /* colores */
+    --lily: #EFDCC6;
+    --calm-gray: #333333;
+    --white: #FEFEFE;
+    --olive-green: #647B64;
+    --light-olive-green: #66AC66;
+    --green: #b5df78;
+    --gradient:linear-gradient(102.3deg, #647B64 -4.62%, #66AC66 178.22%);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+*::selection{
+    background: #66AC66;
+    color: var(--white);
+}
+html{
+    font-size: 62.5%;
+    overflow: scroll;
+}
+body{
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(239,220,198,1) 100%);
+}
+section{
+    min-height: 100vh; 
+    padding: 0 12%; 
+    padding-top: 7.5rem;
+}
+.bold-text{
+    color:var(--olive-green);
+}
+.contact-btn{
+    display:inline-block;
+    margin-top: 1rem;
+    padding: .2rem 1rem; 
+    border-radius: 5rem; 
+    background: var(--gradient);
+    color:var(--white);
+    font-size: 1.7rem; 
+    cursor:pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0 , 0 .1);
+    transition: all .3s linear;
+}
+.btn{
+    display:inline-block;
+    margin-top: 1rem;
+    padding: .8rem 2rem; 
+    border-radius: 5rem; 
+    background: var(--gradient);
+    font-size: 1.7rem; 
+    color: var(--white);
+    cursor:pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0 , 0 .1);
+    transition: all .3s linear;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+.heading{
+    text-align:center;
+    background:var(--gradient);
+    color:transparent;
+    -webkit-background-clip:text;
+    background-clip:text;
+    font-size:4rem;
+    padding: 1rem;
+}
+header{
+    top:0; left:0;
+    padding: 2rem 12%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between; 
+    z-index: 1000;
+}
+.logo img{
+    height: 3rem;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    margin-left:2rem;
+    color:var(--calm-gray);
+    text-decoration: none;
+}
+header input{
+    display:none;
+}
+header label{
+    font-size: 3rem;
+    color:var(--olive-green);
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+.home{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.home img{
+    width: 45vw;
+}
+.container h4{
+    font-size:small;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.container h1{
+    font-size: 4rem;
+    color: var(--olive-green);
+}
+.container p{
+    text-align: left;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+.box img{
+    width: 6rem;
+}
+.about .column{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.about .column.image{
+    flex: 1 1 40rem;
+}
+.about .column .image img{
+    width: 40vw;
+}
+.about .column .content{
+    flex: 1 1 40rem;
+}
+.about .column .content h2{
+    font-size: 2rem; 
+    color: var(--olive-green);
+}
+.content p{
+    font-size: 1.6rem; 
+    color: var(--calm-gray);
+    padding: 1rem 0;
+    line-height: 2;
+}
+.about .column .content .buttons a:last-child{
+    margin-left: 2rem;
+}
+.slogan{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-image: url(file:///C:/Users/F/Documents/PROGRAMACI%C3%93N/programacion_sara/programacion_sara/NUEVA_LANDING_PAGE_RESPONSIVE/ASSETS/img/hojas_solas.svg);
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.psychotherapy{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.psychotherapy img{
+    width: 40vw;
+}
+.text p{
+    text-align: left;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+    line-height: 2;
+}
+.services{
+    background: linear-gradient(180deg, rgba(239,220,198,0) 60%, var(--olive-green) 40%);
+}
+.services .box-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.services .box-container .box{
+    flex: 1 1 30rem;
+    background: var(--white);
+    border-radius:.5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    margin:1.5rem;
+    padding: 4rem 3rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+.services .box-container .box h3{
+    font-size: 1.8rem;
+    color: var(--olive-green);
+    padding-top:1rem;
+}
+.services .box-container .box p{
+    font-size: 1.3rem;
+    color:var(--olive-green);
+    padding: 1rem 0;
+}
+.invitation{
+    text-align:center;
+    padding: 5rem 1rem; 
+    background: linear-gradient(180deg, rgba(100,123,100,1) 5%, rgba(102,172,102,1) 94%);
+}
+.invitation .button {
+    display:inline-block;
+    margin-top: 1rem;
+    padding: .8rem 2rem; 
+    border-radius: 5rem; 
+    font-size: 1.7rem; 
+    color: var(--white);
+    cursor:pointer;
+    box-shadow: 0 .5rem 1rem rgba(0, 0 , 0 .1);
+    transition: all .3s linear;
+    background:linear-gradient(102.3deg, #b5df78 -4.62%, #66AC66 178.22%);
+}
+.button:hover{
+    transform: scale(1.1);
+}
+.invitation h1{
+    color: var(--white);
+    font-weight:normal;
+    font-size: 4rem;
+}
+.offer{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.offer img{
+    width: 35vw;
+}
+.offer-text p{
+    text-align: left;
+    font-size: 1.8rem;
+    padding: 2rem 0;
+    line-height: 2;
+}
+footer{
+    padding-top: 2rem;
+    background-color: var(--olive-green);
+}
+.box-container{
+    display:flex;
+    flex-wrap:wrap;
+}
+.box{
+    flex: 1 1 25rem;
+    margin: 2rem;
+}
+.box h3{
+    font-size: 1.2rem;
+    padding: 1rem 0; 
+    color: var(--white);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+.box p{
+    font-size: 1.2rem;
+    padding: .5rem 0; 
+    color: var(--white);
+    text-underline-offset: 1rem;
+}
+.box a{
+    display:block;
+    font-size: 1.2rem;
+    padding: .5rem 0;
+    color: var(--white);
+}
+.box a:hover{
+    text-decoration:urderline;
+}
+.info{
+    display:flex;
+    align-items: center;
+}
+.info i{
+    color:var(--white);
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    line-height: 4.5rem; 
+    text-align:center;
+}
+.credit{
+    font-size: 1.5rem; 
+    font-weight:normal;
+    color: var(--white);
+    letter-spacing: .1rem;
+    border-top: .1rem solid var(white);
+    padding: 2.5rem 1rem;
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media(max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+
+}
+@media(max-width: 991px){
+    section{
+        padding-top: 7.5rem;
+    }
+
+}
+@media(max-width: 768px){
+    header label{
+        visibility: visible;
+        opacity:1;
+    }
+
+    header .navbar{
+        position:absolute; 
+        top: 100%; left: 0;
+        background: var(--white);
+        padding: 1rem 2rem;
+        border-top: 1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        transform-origin:top;
+        transform: scaleY(0);
+        opacity: 0;
+
+    }
+    header .navbar a{
+        display: block;
+        margin: 4rem 0;
+        font-size: 2rem;
+    }
+    header input:checked ~ .nav{
+        transform: scaleY(1);
+        opacity:1;
+    }
+    header input:checked ~ label::before{
+        content: '\f00d';
+    }
+    .home{
+        flex-flow: column-reverse;
+    }
+    .home img{
+        width: 100%;
+    }
+    .container h4{
+        text-align:center;
+    }
+    .container h1{
+        text-align:center;
+        font-size: 3.6rem;
+        color: var(--olive-green);
+    }
+    .container p{
+        text-align:center;
+        font-size:1.5;
+    }
+    .about .column .image img{
+        width: 100%;
+    }
+    .content h2{
+        text-align: center;
+    }
+    .content p{
+        text-align:center;
+    }
+    .slogan{
+        margin-right: .5rem;
+        background-size:cover;
+        background-position:right;
+        background-attachment: fixed;
+    }
+    .psychotherapy{
+        flex-flow: column-reverse;
+    }
+    .psychotherapy img{
+        width: 100%;
+    }
+    .text p{
+        text-align:center;
+    }
+    .offer{
+        flex-flow:column-reverse;
+    }
+    .offer img{
+        width:100%;
+    }
+    .offer-text p{
+        text-align:center;
+    }
+}
+@media(max-width: 450px){
+    html{
+        font-size:50%
+    }
+    .home .container .btn {
+        width: 100%;
+        text-align: center;
+    }
+    .home .container .btn:last-child{
+        margin: 1rem 0;
+    }
+    .about .column .content .buttons a{
+        width:100%;
+        text-align:center;
+    }
+    .about .column .content .buttons a:last-child{
+        margin: 1rem 0;
+    }
+    .slogan{
+        background-size: cover;
+        background-position: right;
+        background-attachment:fixed;
+    }
+}
